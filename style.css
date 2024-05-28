@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -17,7 +18,7 @@ html, body{
 #nav{
     height: 7vw;
     width: 100%;
-    background-color: royalblue;
+    /* background-color: royalblue; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,6 +27,8 @@ html, body{
 #nav img{
     height: 7.5vw;
     /* width: 50%; */
+    position: relative;
+    left: -2%;
 }
 #nav-part1{
     width: 34%;
@@ -52,8 +55,8 @@ html, body{
     background-color: #1a1a1e;
     color: white;
     border-radius: 2vw;
-    font-size: 1.5vw;
-    margin: 0 5px;
+    font-size: 1vw;
+    margin: 0 0.3vw;
 }
 #nav-part2 button:nth-child(1){
     background-color: transparent;
@@ -62,5 +65,166 @@ html, body{
 #content{
     height: calc(100% - 80px);
     width: 100%;
-    /* background-color: crimson; */
+    /* background-color: rgb(211, 165, 174); */
+    padding-top: 7vw;
+}
+#content h3{
+    background-color: #d3bff2;
+    padding: 0.9vw 1.5vw;
+    font-family: "Source Serif 4";
+    font-weight: 700;
+    font-size: 1.12vw;
+    width: fit-content;
+    border-radius: 2vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 0.07vw;
+    -webkit-user-select: none;
+}
+#content h1{
+    font-size: 5.55vw;
+    text-align: center;
+    line-height: 6vw;
+    margin-top: 3vw;
+    font-family: "Source Serif 4";
+    font-weight: 550;
+    color: #1a1a1e;
+}
+#content h4{
+    font-size: 1.65vw;
+    text-align: center;
+    margin-top: 2vw;
+}
+#content > button{
+    padding: 1vw 1.5vw;
+    font-weight: 600;
+    border: none;
+    background-color: #1a1a1e;
+    color: white;
+    border-radius: 2vw;
+    font-size: 1vw;
+    margin: 3.5vw 0.3vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#main-bottom{
+    height: 100%;
+    width: 100%;
+    background-color: #f8f7f4;
+    margin-top: 2.85vw;
+    /* display: inline-block;  */
+    white-space: nowrap;
+    overflow-x: hidden;    
+    overflow-y: hidden;
+}
+#main-bottom::-webkit-scrollbar{
+    display: none;
+}
+#bottom{
+    height: 65%;
+    width: fit-content;
+    /* background-color: blue; */
+    /* background-color: red; */
+    margin-top: 2.85vw;
+    /* display: flex;
+    flex-wrap: nowrap;
+    gap: 2vw; */
+    display: inline-block; 
+    /* white-space: nowrap; */
+    /* overflow-x: auto
+    overflow-y: hidden; */
+    animation-name: move;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#bottom::-webkit-scrollbar{
+    display: none;
+}
+/* #bottom1{
+    height: 65%;
+    width: 100%;
+    background-color: yellow;
+    margin-top: 2.85vw;
+    display: inline-block; 
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+ #bottom::-webkit-scrollbar{
+    display: none;
+} */
+.elem{
+    /* flex-shrink: 0; */
+    position: relative;
+    height: 100%;
+    width: 250px;
+    background-color: royalblue;
+    display: inline-block;
+    margin: 0 1.3vw;
+    border-radius: 2.3vw;
+    overflow: hidden;
+}
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* border-radius: 2.3vw; */
+}
+.elem video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* border-radius: 2.3vw; */
+}
+.elem .text-bottom{
+    height: 42%;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-size: 0.8vw;
+    padding: 2.2vw 1.5vw;
+
+}
+.elem .text-bottom h2{
+    font-size: 1.1vw;
+    line-height: 1.9vw;
+}
+.elem .bottom-buttons{
+    height: 60%;
+    width: 70%;
+    position: absolute;
+    left: 1.2vw;
+}
+.elem .bottom-buttons button{
+    height: 2vw;
+    width: fit-content;
+    padding: 0 1vw;
+    border: 0.01px solid #ffffffac;
+    background-color: transparent;
+    color: white;
+    bottom: 3vw;
+    left: 5vw;
+    margin: 0 0.3vw;
+    border-radius: 2vw;
+    margin-top: 0.5vw;
+    font-size: 0.8vw;
+    font-weight: 700;
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    background-color: #f8f7f4;
 }
