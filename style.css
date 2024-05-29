@@ -132,9 +132,6 @@ html, body{
     flex-wrap: nowrap;
     gap: 2vw; */
     display: inline-block; 
-    /* white-space: nowrap; */
-    /* overflow-x: auto
-    overflow-y: hidden; */
     animation-name: move;
     animation-duration: 60s;
     animation-iteration-count: infinite;
@@ -151,19 +148,6 @@ html, body{
 #bottom::-webkit-scrollbar{
     display: none;
 }
-/* #bottom1{
-    height: 65%;
-    width: 100%;
-    background-color: yellow;
-    margin-top: 2.85vw;
-    display: inline-block; 
-    white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-}
- #bottom::-webkit-scrollbar{
-    display: none;
-} */
 .elem{
     /* flex-shrink: 0; */
     position: relative;
@@ -225,6 +209,98 @@ html, body{
 }
 #page2{
     height: 100%;
+    width: 100%;
+    background-color: #f8f7f4;
+    margin-top: 35vw;
+    position: relative;
+    padding: 0  4.5vw;
+}
+#page2 h3{
+    text-align: center;
+    font-size: 4vw;
+    font-weight: 400;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-bottom: 3.94vw;
+    /* padding-top: 20vw; */
+    
+}
+.box{
+    height: 20vw;
+    width: 26.5vw;
+    background-color: red;
+    border-radius: 1vw;
+    overflow: hidden;
+    display: inline-block;
+    /* margin: 0.82vw; */
+    object-position: center;
+    margin-left: 2.1vw;
+    margin-bottom: 7vw;
+    position: relative;
+    transition: all 0.5s ease;
+}
+.box::after{
+    content: "Folio Illustration Agency";
+    font-size: 2vw;
+    top: 2vw;
+}
+.box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.box-bottom{
+    height: 30%;
+    width: 100%;
+    background: linear-gradient(transparent,rgba(0, 0, 0, 0.676));
+    position: absolute;
+    bottom: -40%;
+    transition: all 0.3s ease;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    bottom: 0;
+    opacity: 0;
+}
+.box-bottom i{
+    height: 3.29vw;
+    width: 3.29vw;
+    background-color: white;
+    color: black;
+    padding: 1vw 1.01vw;
+    border-radius: 50%;
+    font-size: 1.3vw;
+    font-weight: 300;
+}
+.br_icon{
+    height: 3vw;
+    width: 7.4vw;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+}
+.overlay{
+    height: 2vw;
+    width: 26vw;
+    background-color: red;
+    /* position: absolute; */
+    top: 29vw;
+    left: 7vw;
+}
+.box-bottom h4{
+    font-size: 1.3vw;
+}
+.box:hover .box-bottom{
+    opacity: 1;
+    /* bottom: 0; */
+    cursor: pointer;
+}
+.box:hover{
+    box-shadow: 0 0 0.9vw rgba(255, 68, 0, 0.648);
+}
+#page3{
+    height:100%;
     width: 100%;
     background-color: #f8f7f4;
 }
